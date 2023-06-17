@@ -75,6 +75,21 @@ def move_cost(rent, comission, deposit, taxi_cost):
     sum_cost = rent + deposit + comission + taxi_cost
     return sum_cost
 
-cost_of_moving1 = move_cost(35000,60,35000,1973)
+cost_of_moving1 = move_cost(36000,50,36000,0)
 print(cost_of_moving1)
+
+cost_of_moving2 = move_cost(37000,0,15000,0)
+print(cost_of_moving2)
 help(move_cost)
+
+import numpy as np
+a = np.array([2, 3, 4])
+print(a)
+
+import urllib.request
+
+urllib.request.urlretrieve(
+    'https://gist.github.com/BirajCoder/a4ffcb76fd6fb221d76ac2ee2b8584e9/raw/4054f90adfd361b7aa4255e99c2e874664094cea/climate.csv', 
+    'climate.txt')
+climate_data = np.genfromtxt('climate.txt', delimiter=',', skip_header=1)
+print(climate_data)
